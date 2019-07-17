@@ -1,0 +1,22 @@
+title: InfoSec Books
+description: A curated collection of E-Books related to Information Security.
+url: "https://cstayyab.github.io/InfoSecBooks"
+author: cstayyab
+
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-last-modified-at
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+collections:
+  books:
+    output: true
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - .gitignore
+  - LICENSE
