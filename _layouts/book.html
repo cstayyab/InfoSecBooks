@@ -1,3 +1,14 @@
 ---
 layout: page
 ---
+{% assign book = page.book %}
+<div class="row">
+    <div class="col-md-6 col-sm-12">
+        <img class="img-fluid" src="{{ book.cover | relative_url }}" alt="{{ page.book.title }}" />
+    </div>
+    <div class="col-md-6 col-sm-12">
+        <h2>{{ book.title }}</h2><small>by <strong>{{ book.author }}</strong></small>
+        <div>{{ book.description }}</div>
+        <a class="btn btn-info" href="{{ book.link }}">Download</a>
+    </div>
+</div>
